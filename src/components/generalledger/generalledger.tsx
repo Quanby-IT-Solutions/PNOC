@@ -105,7 +105,51 @@ export const Generalledger: React.FC<GeneralledgerProps> = ({
             <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full z-60">
               <h2 className="text-xl font-semibold mb-4">Create Journal Entry</h2>
               <form onSubmit={handleFormSubmit}>
-                {/* Form fields here */}
+              <div className="mb-4">
+                <label className="block text-sm font-medium mb-1">Transaction Date</label>
+                <input
+                  type="date"
+                  required
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="block text-sm font-medium mb-1">Debit Account</label>
+                <input
+                  type="text"
+                  required
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="block text-sm font-medium mb-1">Credit Account</label>
+                <input
+                  type="text"
+                  required
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="block text-sm font-medium mb-1">Description</label>
+                <input
+                  type="text"
+                  required
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="block text-sm font-medium mb-1">Amount</label>
+                <input
+                  type="number"
+                  required
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+                />
+              </div>
+              
                 <div className="flex justify-end space-x-2">
                   <button type="button" className="px-4 py-2 bg-gray-500 text-white rounded-md" onClick={toggleModal}>Cancel</button>
                   <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded-md">Post Entry</button>
