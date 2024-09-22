@@ -1,3 +1,4 @@
+import "./header.css";
 import React from "react";
 
 export interface HeaderProps {
@@ -5,5 +6,5 @@ export interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ className = "" }) => (
-  <div className={className}>Header</div>
+  <div></div>
 );

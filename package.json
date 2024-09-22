@@ -7,6 +7,7 @@
     "clean": "pnpm store prune"
   },
   "dependencies": {
+    "@iconify/react": "^5.0.2",
     "@nivo/bar": "^0.87.0",
     "@nivo/boxplot": "^0.87.0",
     "@nivo/bullet": "^0.87.0",
@@ -50,7 +51,8 @@
     "next-themes": "^0.3.0",
     "prettier": "^3.3.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
     "@codux-boards/react-nivo": "^1.0.4",
